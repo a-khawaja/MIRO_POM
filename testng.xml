@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test-class Suite"   thread-count="2">
+
+    <test name="ThirdPartySignUpTests">
+        <classes>
+            <class name="tests.ThirdPartySignUpTests"/>
+        </classes>
+    </test>
+    
+    <test name="SignUpFailures">
+        <classes>
+            <class name="tests.SignUpFailureTests"/>
+        </classes>
+    </test>
+
+    <test name="SignUp">
+        <classes>
+            <class name="tests.SignUpTest"/>
+        </classes>
+    </test>
+
+</suite>

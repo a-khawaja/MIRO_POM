@@ -56,11 +56,11 @@ public class DataUtil {
 	
 	//To Check Data Runmode is Yes or NO
 	public static boolean isTestExecutable(Xls_Reader xls, String testCaseName) {
-		int rows = xls.getRowCount(FBConstants.TESTCASES_SHEET);
+		int rows = xls.getRowCount(Constants.TESTCASES_SHEET);
 		for (int rNum = 2; rNum <= rows; rNum++) {
-			String tcid = xls.getCellData(FBConstants.TESTCASES_SHEET, "TCID", rNum);
+			String tcid = xls.getCellData(Constants.TESTCASES_SHEET, "TCID", rNum);
 			if (tcid.equals(testCaseName)) {
-				String runmode = xls.getCellData(FBConstants.TESTCASES_SHEET, "Runmode", rNum);
+				String runmode = xls.getCellData(Constants.TESTCASES_SHEET, "Runmode", rNum);
 				if (runmode.equals("Y"))
 					return true;
 				else

@@ -23,6 +23,7 @@ Eclipse/IntelliJ
 4. In order to run all tests suite files or feature-wise suite file(s) for a particular component manually.
     - **To run all features at once, value to be passed is 'all'**
         - `Run the TestNG.xml file`
+        - `Run the command mvn clean test -Dtestngfile="<testngfilename>"`
 
 <h3><b>Note:</b></h3>
 

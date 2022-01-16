@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 57.146 s <<< FAILURE! - in TestSuite
+tests.SignUpTest.SignUpPage[{Username=Test username, Password=12345678, Description=Happy path, Email=ProperEmail1111@gmail.com}](1)  Time elapsed: 16.795 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at tests.SignUpTest.SignUpPage(SignUpTest.java:28)
+
+tests.SignUpTest.SignUpPage[{Username=Test usern!_2321, Password=12345678, Description=Username Special characters, Email=Proper1112331@gmail.com}](2)  Time elapsed: 12.559 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at tests.SignUpTest.SignUpPage(SignUpTest.java:28)
+
+tests.SignUpTest.SignUpPage[{Username=Test usernameßüöä, Password=12345678, Description=German special characters with user name and password, Email=ProperProperEmaila1222!2_2@gmail.com}](3)  Time elapsed: 12.85 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at tests.SignUpTest.SignUpPage(SignUpTest.java:28)
+
+tests.SignUpTest.SignUpPage[{Username=Test username, Password=12345678, Description=Not signing up for updates, Email=EmailEmail191@gmail.com}](4)  Time elapsed: 13.387 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at tests.SignUpTest.SignUpPage(SignUpTest.java:28)
+

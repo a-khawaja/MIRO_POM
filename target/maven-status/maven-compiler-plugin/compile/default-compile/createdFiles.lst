@@ -3,6 +3,7 @@ tests\SignUpFailureTests.class
 tests\ThirdPartySignUpTests.class
 BasePage\TestBase.class
 util\DataUtil.class
+pages\PageContainer.class
 pages\SignUpPage.class
 util\Xls_Reader.class
 pages\PageBase.class

@@ -12,8 +12,9 @@ public class ThirdPartySignUpTests extends TestBase {
 
     @Test(dataProvider = "getData", priority = 1)
     public void ThirdPartySignUp(Hashtable<String, String> data) throws Exception {
-        extentTest = extentReports.createTest("Login Tests" + data.get("Description"));
+        extentTest = extentReports.createTest("Login Test " + data.get("Description"));
         container.signUpPage.signUPWithThirdParty(data.get("ThirdParty"));
+        callHomePage();
     }
 
 

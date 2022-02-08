@@ -72,7 +72,10 @@ public class SignUpPage extends PageBase {
     @FindBy(how = How.XPATH, using = "//div[@class='socialtos__terms-wrap socialtos__terms-wrap--last']//div[@class='mr-checkbox-1']//span[@class='mr-checkbox-1__wrap']//label[@class='mr-checkbox-1__check']")
     WebElement UPDATES_CHECKBOX;
 
-    @FindBy(how = How.XPATH, using = "//span[contains(text(),'Mit der Anmeldung fortfahren')]")
+//    @FindBy(how = How.XPATH, using = "//span[contains(text(),'Mit der Anmeldung fortfahren')]")
+//    WebElement SIGNUP_WITH_THIRD_PARTY;
+
+    @FindBy(how = How.XPATH, using="//button[@class='socialtos__btn js__socialtos-signup']")
     WebElement SIGNUP_WITH_THIRD_PARTY;
 
     @FindBy(how = How.XPATH, using = "//input[@id='domain']")
@@ -134,7 +137,7 @@ public class SignUpPage extends PageBase {
         clickUpdatesCheckBox();
     }
 
-    public boolean verifySingUpSuccessfull() throws InterruptedException {
+    public boolean verifySignUpSuccessfull() throws InterruptedException {
         boolean flag = false;
 
         clickTermsAndConditionCheckBox();
@@ -189,7 +192,7 @@ public class SignUpPage extends PageBase {
     public void signUPWithSlack() throws InterruptedException {
         acceptCookies();
 
-        if (!isElementPresent(GOOGLE_ICON))
+        if (!isElementPresent(SLACK_ICON))
             scrollPageDown();
         click(SLACK_ICON);
 
@@ -209,7 +212,7 @@ public class SignUpPage extends PageBase {
         boolean flag = false;
         acceptCookies();
 
-        if (!isElementPresent(GOOGLE_ICON))
+        if (!isElementPresent(OFFICE_ICON))
             scrollPageDown();
         click(OFFICE_ICON);
 

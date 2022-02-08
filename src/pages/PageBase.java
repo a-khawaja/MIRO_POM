@@ -1,6 +1,5 @@
 package pages;
 
-import com.aventstack.extentreports.ExtentTest;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -16,7 +15,6 @@ public class PageBase {
     static Logger log = Logger.getLogger(PageBase.class);
     public WebDriver driver;
     public Actions actions;
-    public ExtentTest extentTest;
 
     /**
      * Constructor of the class.

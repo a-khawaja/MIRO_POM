@@ -17,7 +17,8 @@ public class SignUpTest extends TestBase {
     public void SignUpPage(Hashtable<String, String> data) throws Exception {
         extentTest = extentReports.createTest("Login Tests" + data.get("Description"));
         container.signUpPage.signUPNormal(data.get("Username"), data.get("Email"), data.get("Password"), data.get("Description"));
-        Assert.assertTrue(container.signUpPage.verifySingUpSuccessfull());
+        Assert.assertTrue(container.signUpPage.verifySignUpSuccessfull());
+        callHomePage();
     }
 
     @DataProvider
